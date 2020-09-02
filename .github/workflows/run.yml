@@ -25,5 +25,5 @@ jobs:
       run: |
         ibmcloud target -g Default
         ibmcloud target --cf
-        ibmcloud cf install
+        ibmcloud cf install -v 6.51.0
         ibmcloud cf restart ${{ secrets.CFNAME }}
